@@ -1,0 +1,34 @@
+Proceso Ejercicio_11
+	sp<-0;
+	cp<-0;
+	cI<-0;
+	cD<-0;
+	nG<-0;
+	Escribir "Los numeros son: ";
+	Para x=1 hasta 10 Con Paso 1 Hacer
+		n<-Aleatorio(0,36);
+		escribir n;
+		si n mod 2==0 y n!=0 Entonces
+			sP<-sP+n;
+			cp<-cp+1;
+		Sino
+			si n mod 2!=0 y n!=0 Entonces
+				cI<-cI+1;
+			FinSi
+		FinSi
+		si n<=24 y n>=13 Entonces
+			cD<-cD+1;
+		FinSi
+		si n>=nG Entonces
+			nG<-n;
+		FinSi
+	FinPara
+	pP<-(sp/cp);
+	Escribir "a. Cantidad de numeros impares: ",cI
+	Escribir "b. Promedio de pares: ",pP;
+	Escribir "a. Cantidad de numeros 2 docena: ",cD
+	Escribir "a. Numero mayor: ",nG
+	Escribir "b. se utiliza un mientras ya que no tiene un limite";
+	Escribir "y solo se le coloca una condicion que debe de cumplir "
+	Escribir "en este caso que el numero no sea igual a 36"
+FinProceso
